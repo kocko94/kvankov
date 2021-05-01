@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {TIMELINES} from './TimelinesData';
 
 @Component({
   selector: 'app-hire',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hire.component.scss']
 })
 export class HireComponent implements OnInit {
+  public timelines = TIMELINES;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
-
 }
+
+

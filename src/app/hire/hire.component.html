@@ -1,7 +1,12 @@
 <mgl-timeline>
-  <mgl-timeline-entry>
-    <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
-    <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-    <mgl-timeline-entry-side>2018</mgl-timeline-entry-side>
+  <mgl-timeline-entry *ngFor="let timeline of timelines">
+    <mgl-timeline-entry-header>{{timeline.header}}</mgl-timeline-entry-header>
+    <mgl-timeline-entry-content>{{timeline.content}}</mgl-timeline-entry-content>
+    <mgl-timeline-entry-side>{{timeline.year}}</mgl-timeline-entry-side>
+    <mgl-timeline-entry-dot [class]="'primary'" [size]="40"
+                            [expandAnimationTiming]="'200ms ease'"
+                            [collapseAnimationTiming]="'100ms ease'">
+      <img src="{{'data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAH0lEQVR42mP8r8NwjIGKgHHUwFEDRw0cNXDUwJFqIAD27CbpdjykuAAAAABJRU5ErkJggg==' }}" style="width: 20px; height: 20px;" alt="Image"/>
+    </mgl-timeline-entry-dot>
   </mgl-timeline-entry>
 </mgl-timeline>
