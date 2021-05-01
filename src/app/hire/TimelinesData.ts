@@ -20,7 +20,7 @@ export const TIMELINES: Timeline[] = [
       'Done that'
     ],
     imageData: {
-      path: '/assets/images/AAD.png', shouldAddCircle: false
+      path: '/assets/images/medal.svg', shouldAddCircle: true
     }
   },
   {
@@ -32,7 +32,7 @@ export const TIMELINES: Timeline[] = [
       'Done that'
     ],
     imageData: {
-      path: '/assets/images/csm.png', shouldAddCircle: false
+      path: '/assets/images/medal.svg', shouldAddCircle: true
     }
   },
   {
@@ -44,7 +44,7 @@ export const TIMELINES: Timeline[] = [
       'Done that'
     ],
     imageData: {
-      path: '/assets/images/iSAQB.png', shouldAddCircle: false
+      path: '/assets/images/medal.svg', shouldAddCircle: true
     }
   },
 ];
