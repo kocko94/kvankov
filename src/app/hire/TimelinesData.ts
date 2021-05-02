@@ -39,10 +39,7 @@ export const TIMELINES: Timeline[] = [
     year: '2002',
     position: 'Software Architecture',
     employer: '',
-    contents: [
-      'Done this',
-      'Done that'
-    ],
+    contents: [],
     imageData: {
       path: '/assets/images/medal.svg', shouldAddCircle: true
     }

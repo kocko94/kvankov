@@ -4,7 +4,7 @@
       <div class="position-style">{{timeline.position}}</div>
       <div class="employer-style">{{timeline.employer}}</div>
     </mgl-timeline-entry-header>
-    <mgl-timeline-entry-content>
+    <mgl-timeline-entry-content *ngIf="timeline.contents.length > 0">
       <mat-list>
         <mat-list-item *ngFor="let item of timeline.contents">
           {{ item }}
@@ -15,8 +15,8 @@
       <h2 class="year-style">{{timeline.year}}</h2>
     </mgl-timeline-entry-side>
     <mgl-timeline-entry-dot [class]="'primary'" [size]="80"
-                            [expandAnimationTiming]="'200ms ease'"
-                            [collapseAnimationTiming]="'100ms ease'">
+                            [expandAnimationTiming]="timeline.contents.length > 0 ? '200ms ease' : '0'"
+                            [collapseAnimationTiming]="timeline.contents.length > 0 ? '100ms ease' : '0'">
       <div *ngIf="timeline.imageData.shouldAddCircle;then smallerImage else image"></div>
       <ng-template #smallerImage><img src="{{timeline.imageData.path}}" style="width: 60px; height: 60px; padding: 10px" alt="icon"/></ng-template>
       <ng-template #image><img src="{{timeline.imageData.path}}" style="width: 80px; height: 80px;" alt="icon"/></ng-template>
