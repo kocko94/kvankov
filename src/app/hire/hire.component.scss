@@ -1,3 +1,5 @@
+$padding-year: 45px;
+
 .position-style {
   font-size: 17px;
 }
@@ -5,6 +7,15 @@
 .employer-style {
   font-size: 14px;
   margin-top: 2px;
+}
+
+.year-style-left {
+  text-align: left;
+  padding: 20px 20px 20px $padding-year;
+}
+.year-style-right {
+  text-align: right;
+  padding: 20px $padding-year 20px 20px;
 }
 
 .version-info {
