@@ -1,4 +1,4 @@
-<mgl-timeline>
+<mgl-timeline [alternate]="true" [side]="'right'">
   <mgl-timeline-entry *ngFor="let timeline of timelines; let i = index">
     <mgl-timeline-entry-header>
       <div class="position-style">{{timeline.position}}</div>
