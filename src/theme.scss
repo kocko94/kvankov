@@ -1,21 +1,22 @@
 @import '~@angular/material/theming';
 
 $primary: (
-  Main:#522058,
-  Light:#804b85,
-  Dark: #28002f,
-  contrast: (
-    Main: #f5f5f5,
-    Light: #000,
-    Dark: #fff
-  ));
-$accent: (
-  Main: #F7931E,
-  Light: #ffc453,
-  Dark: #be6500,
+  Main: #33cc66,
+  Light: #71ff95,
+  Dark: #009a39,
   contrast: (
     Main: #fff,
     Light: #fff,
+    Dark: #fff
+  ));
+
+$accent: (
+  Main:#212121,
+  Light:#484848,
+  Dark: #000000,
+  contrast: (
+    Main: #f5f5f5,
+    Light: #000,
     Dark: #fff
   ));
 $warn:$mat-red;
