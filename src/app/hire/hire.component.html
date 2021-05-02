@@ -14,12 +14,12 @@
     <mgl-timeline-entry-side>
       <h2 class="year-style">{{timeline.year}}</h2>
     </mgl-timeline-entry-side>
-    <mgl-timeline-entry-dot [class]="'primary'" [size]="80"
+    <mgl-timeline-entry-dot [class]="'primary'" [size]="60"
                             [expandAnimationTiming]="timeline.contents.length > 0 ? '200ms ease' : '0'"
                             [collapseAnimationTiming]="timeline.contents.length > 0 ? '100ms ease' : '0'">
       <div *ngIf="timeline.imageData.shouldAddCircle;then smallerImage else image"></div>
-      <ng-template #smallerImage><img src="{{timeline.imageData.path}}" style="width: 60px; height: 60px; padding: 10px" alt="icon"/></ng-template>
-      <ng-template #image><img src="{{timeline.imageData.path}}" style="width: 80px; height: 80px;" alt="icon"/></ng-template>
+      <ng-template #smallerImage><img src="{{timeline.imageData.path}}" style="width: 40px; height: 40px; padding: 10px" alt="icon"/></ng-template>
+      <ng-template #image><img src="{{timeline.imageData.path}}" style="width: 60px; height: 60px;" alt="icon"/></ng-template>
     </mgl-timeline-entry-dot>
   </mgl-timeline-entry>
 </mgl-timeline>
